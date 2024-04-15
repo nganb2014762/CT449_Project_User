@@ -1,15 +1,15 @@
 import { createWebHistory, createRouter } from "vue-router";
 // Auth
-import Register from "@/views/auth/RegisterPage.vue";
-import LoginPage from "@/views/auth/LoginPage.vue";
+import Register from "@/pages/auth/RegisterPage.vue";
+import LoginPage from "@/pages/auth/LoginPage.vue";
 
 // User
-import Home from "@/views/home/HomePage.vue";
-import SearchPage from "@/views/search/SearchPage.vue";
-import FrofilePage from "@/views/profile/ProfilePage.vue";
-import ProductPage from "@/views/product/ProductPage.vue";
-import CartPage from "@/views/cart/CartPage.vue";
-import OrderPage from "@/views/order/OrderPage.vue";
+import Home from "@/pages/home/HomePage.vue";
+import SearchPage from "@/pages/search/SearchPage.vue";
+import FrofilePage from "@/pages/profile/ProfilePage.vue";
+import ProductPage from "@/pages/product/ProductPage.vue";
+import CartPage from "@/pages/cart/CartPage.vue";
+import OrderPage from "@/pages/order/OrderPage.vue";
 const routes = [
     //Auth
     {
@@ -63,7 +63,7 @@ const routes = [
     {
         path: "/:pathMatch(.*)*",
         name: "notfound",
-        component: () => import("@/views/NotFound.vue"),
+        component: () => import("@/pages/NotFound.vue"),
     },
     
 ];
